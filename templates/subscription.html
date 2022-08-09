@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>Currently subscribed on :</h1>
+    {% for subscription in subscriptions %}
+        <h4>{{ subscription.subcription_name}}</h4>
+    {% endfor %}
+{% endblock content %}
